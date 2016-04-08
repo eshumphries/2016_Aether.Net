@@ -1,0 +1,76 @@
+Types:
+        Cards:
+                Map
+                Scene
+        Arrays:
+                Single_Stat_View_array
+
+        Collections:
+                Any? ????
+        Views:
+                Location
+                Scene
+                Map
+
+Location_API
+        tell_deck_index()   // among the decks, not of a card
+        load_card(     Int idx, Card c )
+        remove_card(   Int idx, Card c )
+        tell_card_at_index( Int idx )
+
+Location_b(
+        U u,
+        String                 name,
+        Panoramic_Card_array   p_ary )
+
+Location_View(
+        U u,
+        Location loc )
+
+Card_View_API
+        tell_card_index()
+        load_card(     Int idx, Card c )
+        remove_card(   Int idx, Card c )
+        flip_by_name(  String n )
+        flip_by_index( Int idx )
+        run_action(    Int action_idx )
+
+Map_Card_b(
+        U u,
+        String         name,
+        Path           front_img,
+        Path           back_img,
+        ClickHandler   h )
+
+Map_View_b(
+        U u,
+        Map_Card_array   m_ary)
+
+Scene_Card_b(
+        U u,
+        String         name,
+        Path           front_img,
+        Path           back_img,
+        ClickHandler   h )
+
+Stat_Single_View_API
+        ToDo ????
+
+Stat_Icon_b(
+        U u,
+        String         name, // "Brown disk"
+        Path           img,
+        ClickHandler   h )
+
+Stat_Single_View_b(
+        U u,
+        String      name,   // "Bullets"
+        Stat_Icon   si,
+        Int         count )
+
+Stat_All_View(
+        U u,
+        Stat_Single_View_array   ssv_ary )
+
+
+
